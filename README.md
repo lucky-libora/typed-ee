@@ -14,11 +14,28 @@ $ npm install --save typed-ee
 After installation the only thing you need to do is require the module:
 
 ```js
-var EventEmitter = require('event-emitter3');
-```
+import {TypedEventEmitter} from "typed-ee/lib/TypedEventEmitter";
 
-And you're ready to create your own EventEmitter instances. For the API
-documentation, please follow the official Node.js documentation:
+class MyEventEmitter extends TypedEventEmitter {
+
+  public messageEvent = this.event<string>('message');
+
+}
+
+const ee = new MyEventEmitter();
+
+ee.messageEvent.on((s: string) => console.log(s));
+
+ee.emit('Hello world');
+
+//also available once and off methods
+
+ee.messageEvent.once((s: string) => console.log(s));
+
+ee.messageEvent.off((s: string) => console.log(s));
+
+
+```
 
 http://nodejs.org/api/events.html
 
