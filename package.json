@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Simple interface for using EventEmitter in TypeScript",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "coverage": "node node_modules/nyc/bin/nyc.js --reporter=html mocha",
     "test": "node node_modules/mocha/bin/mocha",
@@ -19,7 +20,9 @@
     "publish",
     "reactor",
     "subscribe",
-    "object"
+    "strict",
+    "ts",
+    "typescript"
   ],
   "author": "Aleksey Vasilyev <luckylibora@gmail.com>",
   "license": "ISC",
