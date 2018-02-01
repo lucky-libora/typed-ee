@@ -1,6 +1,6 @@
 {
   "name": "typed-ee",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Simple interface for using EventEmitter in TypeScript",
   "main": "index.js",
   "types": "index.d.ts",
