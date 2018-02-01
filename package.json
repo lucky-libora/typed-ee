@@ -1,6 +1,6 @@
 {
   "name": "typed-ee",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Simple interface for using EventEmitter in TypeScript",
   "main": "index.js",
   "types": "index.d.ts",
@@ -31,7 +31,7 @@
     "url": "https://github.com/lucky-libora/typed-ee.git"
   },
   "dependencies": {
-    "event-emitter3": "1.0.3"
+    "event-emitter3": "1.0.4"
   },
   "devDependencies": {
     "mocha": "^3.4.2",
